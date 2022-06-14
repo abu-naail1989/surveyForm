@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <section class="section-center">
+      <div class="title">
+        <h1 id="title">dema hub survey form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform!!!
+        </p>
+      </div>
+      <div class="form">
+        <form action="" id="survey-form">
+          <label for="" id="name-label"
+            >name:
+            <input type="text" class="max" id="name" required placeholder="Enter your name"
+          /></label>
+          <label for="" id="email-label"
+            >email:
+            <input
+              type="email" class="max"
+              id="email"
+              required pattern="[a-zA-Z0-9.! #$%&'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:\. [a-zA-Z0-9-]+)*$/"
+              placeholder="Enter your email"
+          /></label>
+          <label for="" id="number-label"
+            >number of years:
+            <input  class="max"
+              type="number"
+              id="number"
+              min="1"
+              max="5"
+              placeholder="How long have you studied with us?"
+          /></label>
+          <label for="">
+            what is your first programming language?
+            <select name="" id="dropdown">
+              <option value="">(select one)</option>
+              <option value="">JavaScript</option>
+              <option value="">Python</option>
+              <option value="">Php</option>
+              <option value="">Ruby</option>
+              <option value="">Java</option>
+              <option value="">Other</option>
+            </select>
+          </label>
+          <label for=""
+            >how experienced are you in the chosen language now?
+            <label for=""></label>
+              <input class="inline" type="radio" value="beginner" name="experience"
+            />Beginner</label>
+            <label for=""
+              ><input class="inline" type="radio" name="experience"  value="intermediate"/>Intermediate </label
+            >
+            <label for=""
+              ><input class="inline" type="radio" name="experience" value="advanced"/>Advanced </label
+            >
+          </label>
+          <label  for=""
+            >What would you like to see improved? (Check all that apply)
+            <label for="">
+              <input class="inline" type="checkbox" value="front" /> Front-End Projects
+            </label>
+            <label for=""
+              >
+              <input class="inline" type="checkbox" value="back" />Back-End Projects
+            </label>
+            <label for="">
+              
+              <input class="inline" type="checkbox" value="front" />Data Visualisation
+            </label>
+            <label for=""
+              >
+              <input class="inline" type="checkbox" value="front" />Open Source Projects
+            </label>
+            <label for=""
+              >
+              <input class="inline" type="checkbox" value="front" />Forum Improvement
+            </label>
+            <label for=""
+              >
+              <input class="inline" type="checkbox" value="front" />Additional Courses
+            </label>
+          </label>
+          <label for=""
+            >Any comments or suggestions?
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+          </label>
+          <button id="submit" class="btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
